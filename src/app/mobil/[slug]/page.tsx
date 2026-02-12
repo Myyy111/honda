@@ -110,7 +110,7 @@ export default async function CarDetail({ params }: Props) {
             </section>
 
             {/* 2. SUB NAVIGATION */}
-            <SubNav />
+            <SubNav carName={car.name} whatsappNumber={whatsappNumber} />
 
             {/* 3. PRODUCT SHOWCASE */}
             <section className="py-24 bg-white relative">

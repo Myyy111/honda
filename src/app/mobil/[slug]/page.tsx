@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Metadata } from "next";
 import { CTASection } from "./cta-section";
-import { SubNavFixed as SubNav } from "./sub-nav";
+import { UnitNavigation } from "./unit-navigation";
 
 type Props = {
     params: Promise<{ slug: string }>
@@ -109,8 +109,8 @@ export default async function CarDetail({ params }: Props) {
                 </div>
             </section>
 
-            {/* 2. SUB NAVIGATION */}
-            <SubNav carName={car.name} whatsappNumber={whatsappNumber} />
+            {/* 2. UNIT NAVIGATION */}
+            <UnitNavigation carName={car.name} whatsappNumber={whatsappNumber} />
 
             {/* 3. PRODUCT SHOWCASE */}
             <section className="py-24 bg-white relative">
